@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.42",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.42/SystemCare-1.7.42-x64.msi",
-    "sha256":  "F4AA75727108DA5F25E72A683AD412A04353CC57395695379690DCFCFF9621C6",
+    "version":  "1.7.43",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.43/SystemCare-1.7.43-x64.msi",
+    "sha256":  "2239D76E8C9F2B27E2A5F806FCF0363D385D37CDABD612099E65CDF6A800351C",
     "sizeBytes":  62918656,
-    "releasedUtc":  "2026-10-07T20:19:24Z",
-    "notes":  "Updates now come from iSharpe\u0027s own release server, and the main window uses a lighter grey."
+    "releasedUtc":  "2026-10-07T20:31:01Z",
+    "notes":  "A test release to confirm that updates install by themselves."
 }
