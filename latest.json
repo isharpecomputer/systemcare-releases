@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.47",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.47/SystemCare-1.7.47-x64.msi",
-    "sha256":  "E5D8268414170AE6222EEBC96051F05CBF7F4646ABE3D6397F3B28A8BC838B1A",
+    "version":  "1.7.48",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.48/SystemCare-1.7.48-x64.msi",
+    "sha256":  "922CBF2E6B71D820D14D9C01CA2D0B350D99ECCF85A2599FD6B89E1B8CB9FD72",
     "sizeBytes":  63025152,
-    "releasedUtc":  "2026-10-08T18:39:57Z",
-    "notes":  "Much faster backups to USB drives, several named browser recordings with a choice of which to reset to, extension blocking that now covers Firefox and applies at once, a Move to taskbar option for the ScamShield button, and clearer baseline restore for installed and startup programs."
+    "releasedUtc":  "2026-10-08T18:59:19Z",
+    "notes":  "The window now opens tall enough to show the whole dashboard without scrolling, and the Startup Items page says whether a list is recorded and when it was taken."
 }
