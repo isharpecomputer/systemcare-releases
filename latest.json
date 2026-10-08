@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.49",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.49/SystemCare-1.7.49-x64.msi",
-    "sha256":  "04C5EC932129C4BC48FAF0FEB4AA6C47A409AC9639E855E875733E4EE4EBAF6C",
-    "sizeBytes":  63025152,
-    "releasedUtc":  "2026-10-08T19:39:10Z",
-    "notes":  "The ScamShield button no longer blinks: it now stays above the taskbar by lifting itself only when something covers it."
+    "version":  "1.7.50",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.50/SystemCare-1.7.50-x64.msi",
+    "sha256":  "6FD0B235778E05FFFB4C10F3319FCAE3C85E7FCE70CB1F3273938768684C2C5A",
+    "sizeBytes":  63168512,
+    "releasedUtc":  "2026-10-08T20:18:18Z",
+    "notes":  "New Printers section that finds out why a printer stopped printing and fixes it: network printers whose address changed, printers Windows marked offline, stuck documents, the print service, and USB printers."
 }
