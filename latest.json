@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.46",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.46/SystemCare-1.7.46-x64.msi",
-    "sha256":  "D8F7437A6D256849A762C484C8059719B4FA741A88F41A8E726310573C92E758",
-    "sizeBytes":  62967808,
-    "releasedUtc":  "2026-10-08T17:27:24Z",
-    "notes":  "Opens without a Windows permission prompt, a clearer purple for items that need attention, and the ScamShield button now stays above the taskbar."
+    "version":  "1.7.47",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.47/SystemCare-1.7.47-x64.msi",
+    "sha256":  "E5D8268414170AE6222EEBC96051F05CBF7F4646ABE3D6397F3B28A8BC838B1A",
+    "sizeBytes":  63025152,
+    "releasedUtc":  "2026-10-08T18:39:57Z",
+    "notes":  "Much faster backups to USB drives, several named browser recordings with a choice of which to reset to, extension blocking that now covers Firefox and applies at once, a Move to taskbar option for the ScamShield button, and clearer baseline restore for installed and startup programs."
 }
