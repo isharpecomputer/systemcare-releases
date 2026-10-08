@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.43",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.43/SystemCare-1.7.43-x64.msi",
-    "sha256":  "2239D76E8C9F2B27E2A5F806FCF0363D385D37CDABD612099E65CDF6A800351C",
-    "sizeBytes":  62918656,
-    "releasedUtc":  "2026-10-07T20:31:01Z",
-    "notes":  "A test release to confirm that updates install by themselves."
+    "version":  "1.7.44",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.44/SystemCare-1.7.44-x64.msi",
+    "sha256":  "72E6922867C893B2BB7AB4A8A84526A88FF0C51DA0D259DB53982872E85726E2",
+    "sizeBytes":  62930944,
+    "releasedUtc":  "2026-10-08T16:16:04Z",
+    "notes":  "A fresh look: a glowing dark theme with a heartbeat on the dashboard, animated cards and smoother page changes."
 }
