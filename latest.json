@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.45",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.45/SystemCare-1.7.45-x64.msi",
-    "sha256":  "2C4ACFFB24D9A1943E3F504F0990F78D0F5D8A5FE71CEDB07EA499B79D7E3884",
-    "sizeBytes":  62955520,
-    "releasedUtc":  "2026-10-08T16:49:26Z",
-    "notes":  "Live processor and memory graph on the dashboard, a redesigned look on every page with plain descriptions of what each one does, and a live activity panel while scans and checks run."
+    "version":  "1.7.46",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.46/SystemCare-1.7.46-x64.msi",
+    "sha256":  "D8F7437A6D256849A762C484C8059719B4FA741A88F41A8E726310573C92E758",
+    "sizeBytes":  62967808,
+    "releasedUtc":  "2026-10-08T17:27:24Z",
+    "notes":  "Opens without a Windows permission prompt, a clearer purple for items that need attention, and the ScamShield button now stays above the taskbar."
 }
