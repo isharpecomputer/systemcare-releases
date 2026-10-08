@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.48",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.48/SystemCare-1.7.48-x64.msi",
-    "sha256":  "922CBF2E6B71D820D14D9C01CA2D0B350D99ECCF85A2599FD6B89E1B8CB9FD72",
+    "version":  "1.7.49",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.49/SystemCare-1.7.49-x64.msi",
+    "sha256":  "04C5EC932129C4BC48FAF0FEB4AA6C47A409AC9639E855E875733E4EE4EBAF6C",
     "sizeBytes":  63025152,
-    "releasedUtc":  "2026-10-08T18:59:19Z",
-    "notes":  "The window now opens tall enough to show the whole dashboard without scrolling, and the Startup Items page says whether a list is recorded and when it was taken."
+    "releasedUtc":  "2026-10-08T19:39:10Z",
+    "notes":  "The ScamShield button no longer blinks: it now stays above the taskbar by lifting itself only when something covers it."
 }
