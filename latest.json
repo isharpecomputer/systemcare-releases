@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.56",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.56/SystemCare-1.7.56-x64.msi",
-    "sha256":  "DF6FAFEE6EE1BF49EE221B27EC91E505C1755931CF1D1E26CA23E10CE7EB945F",
+    "version":  "1.7.57",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.57/SystemCare-1.7.57-x64.msi",
+    "sha256":  "81953D117C32A75ADAE13E70148A6114F18F219A7D66493F499159B79D40234D",
     "sizeBytes":  63242240,
-    "releasedUtc":  "2026-10-09T18:26:59Z",
-    "notes":  "Support-company screenshots arrive faster and are much sharper."
+    "releasedUtc":  "2026-10-09T18:32:07Z",
+    "notes":  "Passwords page: Chrome, Edge and Brave now open their password pages correctly."
 }
