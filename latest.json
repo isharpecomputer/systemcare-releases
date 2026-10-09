@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.53",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.53/SystemCare-1.7.53-x64.msi",
-    "sha256":  "D03A93AF485ACB021DBB6BF36486F576B940B14A8F282E58E59DEFBAE22DD24E",
-    "sizeBytes":  63205376,
-    "releasedUtc":  "2026-10-09T16:57:38Z",
-    "notes":  "Printers: rename or remove any printer (including OneNote and Print to PDF), add a network or USB printer, and search the network from the Add a printer card. Browsers: a leftover extension block is detected and can be cleared, and unticking Block extensions now always lifts it."
+    "version":  "1.7.54",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.54/SystemCare-1.7.54-x64.msi",
+    "sha256":  "A5BF24EC72A6361BF96BCE72CEA3826700A38E9D4A1BC644C333D9BF181ED618",
+    "sizeBytes":  63242240,
+    "releasedUtc":  "2026-10-09T18:00:53Z",
+    "notes":  "New Passwords page: see and control each browser\u0027s own password saving and backup, without ever reading a password. Your support company can now ask for a picture of your screen when you ask for help; you can switch this off in Settings."
 }
