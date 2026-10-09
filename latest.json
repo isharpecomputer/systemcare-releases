@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.50",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.50/SystemCare-1.7.50-x64.msi",
-    "sha256":  "6FD0B235778E05FFFB4C10F3319FCAE3C85E7FCE70CB1F3273938768684C2C5A",
+    "version":  "1.7.51",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.51/SystemCare-1.7.51-x64.msi",
+    "sha256":  "D6EDDB8FF788B756432BD10D6FF2FE2B14212A9911D071FB44328A4BFC30C79E",
     "sizeBytes":  63168512,
-    "releasedUtc":  "2026-10-08T20:18:18Z",
-    "notes":  "New Printers section that finds out why a printer stopped printing and fixes it: network printers whose address changed, printers Windows marked offline, stuck documents, the print service, and USB printers."
+    "releasedUtc":  "2026-10-09T15:42:31Z",
+    "notes":  "Measures your internet speed once an hour in the background so a technician can see how your connection has been doing."
 }
