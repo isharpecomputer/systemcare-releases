@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.57",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.57/SystemCare-1.7.57-x64.msi",
-    "sha256":  "81953D117C32A75ADAE13E70148A6114F18F219A7D66493F499159B79D40234D",
-    "sizeBytes":  63242240,
-    "releasedUtc":  "2026-10-09T18:32:07Z",
-    "notes":  "Passwords page: Chrome, Edge and Brave now open their password pages correctly."
+    "version":  "1.7.58",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.58/SystemCare-1.7.58-x64.msi",
+    "sha256":  "833DFFF3AEB173F2A6DCD0B88B9BE33C969453D13584D366FEFAABDD64671F97",
+    "sizeBytes":  63254528,
+    "releasedUtc":  "2026-10-09T19:01:49Z",
+    "notes":  "Passwords page: one switch makes every browser always offer to save passwords, and Chrome, Edge and Brave now open their password pages correctly."
 }
