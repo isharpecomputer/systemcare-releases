@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.55",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.55/SystemCare-1.7.55-x64.msi",
-    "sha256":  "34CEA0B9A28E32D8487423E1FCD64B5A6141271D6DA0786D41296CDA3550611C",
+    "version":  "1.7.56",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.56/SystemCare-1.7.56-x64.msi",
+    "sha256":  "DF6FAFEE6EE1BF49EE221B27EC91E505C1755931CF1D1E26CA23E10CE7EB945F",
     "sizeBytes":  63242240,
-    "releasedUtc":  "2026-10-09T18:18:09Z",
-    "notes":  "Fixes the screenshot a support company can ask for, which could not report back."
+    "releasedUtc":  "2026-10-09T18:26:59Z",
+    "notes":  "Support-company screenshots arrive faster and are much sharper."
 }
