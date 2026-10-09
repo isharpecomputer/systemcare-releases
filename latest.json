@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.52",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.52/SystemCare-1.7.52-x64.msi",
-    "sha256":  "D7818905B0FD7DB7A135F16DA77774CDE951C963801501AC9EB2997799D6EA46",
-    "sizeBytes":  63197184,
-    "releasedUtc":  "2026-10-09T16:36:29Z",
-    "notes":  "You can now add a network or USB printer from the Printers page, and Remove and add back no longer risks losing the printer if Windows refuses to re-create it."
+    "version":  "1.7.53",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.53/SystemCare-1.7.53-x64.msi",
+    "sha256":  "D03A93AF485ACB021DBB6BF36486F576B940B14A8F282E58E59DEFBAE22DD24E",
+    "sizeBytes":  63205376,
+    "releasedUtc":  "2026-10-09T16:57:38Z",
+    "notes":  "Printers: rename or remove any printer (including OneNote and Print to PDF), add a network or USB printer, and search the network from the Add a printer card. Browsers: a leftover extension block is detected and can be cleared, and unticking Block extensions now always lifts it."
 }
