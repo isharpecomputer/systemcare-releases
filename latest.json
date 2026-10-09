@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.59",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.59/SystemCare-1.7.59-x64.msi",
-    "sha256":  "4ACED63F4F1D4811EB1667C81E3DB7C0F0BF6C0FC89F43ADE8645F939A64BCCA",
-    "sizeBytes":  63299584,
-    "releasedUtc":  "2026-10-09T19:54:57Z",
-    "notes":  "Your support company can now show you a message on screen when it needs to tell you something."
+    "version":  "1.7.60",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.60/SystemCare-1.7.60-x64.msi",
+    "sha256":  "CFD9B905CC3D93AF7908FC4B5C7C8F16D6854BBE364D83061492057966A346FB",
+    "sizeBytes":  63324160,
+    "releasedUtc":  "2026-10-09T20:15:21Z",
+    "notes":  "Checks each hard drive\u0027s own SMART health report, warns on the dashboard when a drive is failing or showing early warning signs, and reports it to your support company."
 }
