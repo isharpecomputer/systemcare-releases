@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.63",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.63/SystemCare-1.7.63-x64.msi",
-    "sha256":  "7BC542B24410EB5470A4C06356A8823472FE2D5A0E4B27292FFF9B7E9C4A417C",
-    "sizeBytes":  63332352,
-    "releasedUtc":  "2026-10-10T12:28:05Z",
-    "notes":  "Messages from your support company can now include a link, shown as an Open link button with the full address under it."
+    "version":  "1.7.64",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.64/SystemCare-1.7.64-x64.msi",
+    "sha256":  "EDD5E3204FB913603BFAE1208CA9965232E3E5F1ADD0E5193614894E951A11E5",
+    "sizeBytes":  63336448,
+    "releasedUtc":  "2026-10-10T13:01:10Z",
+    "notes":  "A new Get help button on the dashboard opens Windows Quick Assist, so your support company can help you on screen."
 }
