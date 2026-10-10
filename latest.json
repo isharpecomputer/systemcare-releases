@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.64",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.64/SystemCare-1.7.64-x64.msi",
-    "sha256":  "EDD5E3204FB913603BFAE1208CA9965232E3E5F1ADD0E5193614894E951A11E5",
-    "sizeBytes":  63336448,
-    "releasedUtc":  "2026-10-10T13:01:10Z",
-    "notes":  "A new Get help button on the dashboard opens Windows Quick Assist, so your support company can help you on screen."
+    "version":  "1.7.65",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.65/SystemCare-1.7.65-x64.msi",
+    "sha256":  "FC5176DFE8562FA51D5D4F7F3F2F6D05CE5DE788E03D4E731D130CBE67D5861A",
+    "sizeBytes":  63340544,
+    "releasedUtc":  "2026-10-10T13:31:18Z",
+    "notes":  "Your support company\u0027s phone number and details can now be set once and shown in the Get help window and on reports."
 }
