@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.62",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.62/SystemCare-1.7.62-x64.msi",
-    "sha256":  "B513E2EBC20EF0A644FD9E44D143E2A053FFEB26920BA286C68642D273D91DD0",
-    "sizeBytes":  63328256,
-    "releasedUtc":  "2026-10-10T11:44:53Z",
-    "notes":  "ScamShield: a new checkbox on the Helper Apps page lets you turn the hold-Escape-for-2-seconds escape on or off."
+    "version":  "1.7.63",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.63/SystemCare-1.7.63-x64.msi",
+    "sha256":  "7BC542B24410EB5470A4C06356A8823472FE2D5A0E4B27292FFF9B7E9C4A417C",
+    "sizeBytes":  63332352,
+    "releasedUtc":  "2026-10-10T12:28:05Z",
+    "notes":  "Messages from your support company can now include a link, shown as an Open link button with the full address under it."
 }
