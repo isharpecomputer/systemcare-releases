@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.60",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.60/SystemCare-1.7.60-x64.msi",
-    "sha256":  "CFD9B905CC3D93AF7908FC4B5C7C8F16D6854BBE364D83061492057966A346FB",
-    "sizeBytes":  63324160,
-    "releasedUtc":  "2026-10-09T20:15:21Z",
-    "notes":  "Checks each hard drive\u0027s own SMART health report, warns on the dashboard when a drive is failing or showing early warning signs, and reports it to your support company."
+    "version":  "1.7.61",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.61/SystemCare-1.7.61-x64.msi",
+    "sha256":  "56DB54E7145725D82559787B0C225E69EDCD4874FC311300B63E9A966D036CD8",
+    "sizeBytes":  63328256,
+    "releasedUtc":  "2026-10-10T11:36:51Z",
+    "notes":  "A fresher dashboard: your last internet speed is now a ring at the top, the heading reads on two lines, and the live graph starts full and moves faster."
 }
