@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.73",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.73/SystemCare-1.7.73-x64.msi",
-    "sha256":  "B79FCF459E1EA6871E5F6C08FD9539F37C13C003DEE67D078110015822FD1A89",
-    "sizeBytes":  63528960,
-    "releasedUtc":  "2026-10-11T17:17:18Z",
-    "notes":  "Settings page: enter a technician code on a computer that is already set up."
+    "version":  "1.7.74",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.74/SystemCare-1.7.74-x64.msi",
+    "sha256":  "AEDDCC40457661D65480B2A4156AAA201E43EF74E925955FA179CDD74C0E692F",
+    "sizeBytes":  63533056,
+    "releasedUtc":  "2026-10-11T17:25:25Z",
+    "notes":  "Fixes technician setup saying it needs the technician key."
 }
