@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.69",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.69/SystemCare-1.7.69-x64.msi",
-    "sha256":  "A28C36DC9B42E3A7B722E1797803DE41C2AC97891DDECA9485D758FC9025FDFF",
-    "sizeBytes":  63361024,
-    "releasedUtc":  "2026-10-11T15:17:05Z",
-    "notes":  "The Browsers page now lets you tick what to look for (cache, cookies, history, saved tabs) before scanning, and only the ticked kinds are listed and cleared."
+    "version":  "1.7.70",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.70/SystemCare-1.7.70-x64.msi",
+    "sha256":  "406460C3DE2E6889635509F891BA8E74FA81E748B67B2FDC61FB5537336D6341",
+    "sizeBytes":  63365120,
+    "releasedUtc":  "2026-10-11T15:31:50Z",
+    "notes":  "The Network page now shows where your router passes DNS lookups on to, not only the router\u0027s own address."
 }
