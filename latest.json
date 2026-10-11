@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.72",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.72/SystemCare-1.7.72-x64.msi",
-    "sha256":  "D9FF43249DDA104DE59FAA2F57390454FAFAEE144F90E885F31FF9E3E5B59ABA",
+    "version":  "1.7.73",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.73/SystemCare-1.7.73-x64.msi",
+    "sha256":  "B79FCF459E1EA6871E5F6C08FD9539F37C13C003DEE67D078110015822FD1A89",
     "sizeBytes":  63528960,
-    "releasedUtc":  "2026-10-11T17:04:07Z",
-    "notes":  "New Services page (see every service, when it appeared, stop/start/disable). Optional password for SystemCare, resettable from the dashboard. Technician mode for computers set up on site. Default browser: asks to put it back and opens the Windows page to do it."
+    "releasedUtc":  "2026-10-11T17:17:18Z",
+    "notes":  "Settings page: enter a technician code on a computer that is already set up."
 }
