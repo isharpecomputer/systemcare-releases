@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.70",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.70/SystemCare-1.7.70-x64.msi",
-    "sha256":  "406460C3DE2E6889635509F891BA8E74FA81E748B67B2FDC61FB5537336D6341",
-    "sizeBytes":  63365120,
-    "releasedUtc":  "2026-10-11T15:31:50Z",
-    "notes":  "The Network page now shows where your router passes DNS lookups on to, not only the router\u0027s own address."
+    "version":  "1.7.71",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.71/SystemCare-1.7.71-x64.msi",
+    "sha256":  "C2E92588674E85020529E9275834F94B61061CF41E26A25FA8C45284B0D66F38",
+    "sizeBytes":  63430656,
+    "releasedUtc":  "2026-10-11T15:58:33Z",
+    "notes":  "New: a ping test on the Network page, a system file checker on Diagnostics, the default browser can be kept from the Browsers page and reset by maintenance, an optional restore point before maintenance, and tick-what-to-clear on the Browsers page."
 }
