@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.71",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.71/SystemCare-1.7.71-x64.msi",
-    "sha256":  "C2E92588674E85020529E9275834F94B61061CF41E26A25FA8C45284B0D66F38",
-    "sizeBytes":  63430656,
-    "releasedUtc":  "2026-10-11T15:58:33Z",
-    "notes":  "New: a ping test on the Network page, a system file checker on Diagnostics, the default browser can be kept from the Browsers page and reset by maintenance, an optional restore point before maintenance, and tick-what-to-clear on the Browsers page."
+    "version":  "1.7.72",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.72/SystemCare-1.7.72-x64.msi",
+    "sha256":  "D9FF43249DDA104DE59FAA2F57390454FAFAEE144F90E885F31FF9E3E5B59ABA",
+    "sizeBytes":  63528960,
+    "releasedUtc":  "2026-10-11T17:04:07Z",
+    "notes":  "New Services page (see every service, when it appeared, stop/start/disable). Optional password for SystemCare, resettable from the dashboard. Technician mode for computers set up on site. Default browser: asks to put it back and opens the Windows page to do it."
 }
