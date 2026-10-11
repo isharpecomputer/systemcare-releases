@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.67",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.67/SystemCare-1.7.67-x64.msi",
-    "sha256":  "424EF673F8AE01D18968B1A1D9E6854F3F253B3AB99DDF11792B63AF52AFC99C",
+    "version":  "1.7.68",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.68/SystemCare-1.7.68-x64.msi",
+    "sha256":  "27F9D50F4D9A0E554DE87F2757EAE159E8D08D377CC3C5D10FC050B696000B63",
     "sizeBytes":  63361024,
-    "releasedUtc":  "2026-10-11T14:07:53Z",
-    "notes":  "Resetting a browser to its baseline now closes it first if it is open, so an extension added since is removed instead of the reset being skipped."
+    "releasedUtc":  "2026-10-11T14:27:56Z",
+    "notes":  "New option on the Browsers page to stop extensions syncing from the Google or Microsoft account, so an extension removed by a reset is not brought back by it."
 }
