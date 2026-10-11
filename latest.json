@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.65",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.65/SystemCare-1.7.65-x64.msi",
-    "sha256":  "FC5176DFE8562FA51D5D4F7F3F2F6D05CE5DE788E03D4E731D130CBE67D5861A",
-    "sizeBytes":  63340544,
-    "releasedUtc":  "2026-10-10T13:31:18Z",
-    "notes":  "Your support company\u0027s phone number and details can now be set once and shown in the Get help window and on reports."
+    "version":  "1.7.66",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.66/SystemCare-1.7.66-x64.msi",
+    "sha256":  "76A6ED9BF95C5CABEC3C192B41D70ADA48535136A9500D9B3736FF4ECA4CA010",
+    "sizeBytes":  63356928,
+    "releasedUtc":  "2026-10-11T01:10:53Z",
+    "notes":  "Security scans now quarantine what they find, manufacturer-preinstalled software is no longer listed, and a new setting keeps your default browser and puts it back if something changes it."
 }
