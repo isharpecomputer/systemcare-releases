@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.74",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.74/SystemCare-1.7.74-x64.msi",
-    "sha256":  "AEDDCC40457661D65480B2A4156AAA201E43EF74E925955FA179CDD74C0E692F",
+    "version":  "1.7.75",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.75/SystemCare-1.7.75-x64.msi",
+    "sha256":  "2006758E483C4C4EE3A0531E81E0A71F6A966992B6ABA716B53F1DF418B75EB9",
     "sizeBytes":  63533056,
-    "releasedUtc":  "2026-10-11T17:25:25Z",
-    "notes":  "Fixes technician setup saying it needs the technician key."
+    "releasedUtc":  "2026-10-11T17:37:52Z",
+    "notes":  "Settings: optional full name and phone number, shown to your support company on their dashboard."
 }
