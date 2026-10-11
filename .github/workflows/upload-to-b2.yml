@@ -1,0 +1,34 @@
+name: Upload release to Backblaze
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+      B2_APP_KEY: ${{ secrets.B2_APP_KEY }}
+      B2_BUCKET: techtoolbox
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install b2sdk
+      - name: Download the release installer
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          TAG="$RELEASE_TAG"
+          [ -n "$TAG" ] || TAG=$(gh release view -R "$GITHUB_REPOSITORY" --json tagName --jq .tagName)
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" --pattern "SystemCare-*-x64.msi" --dir dl
+      - name: Upload to Backblaze
+        run: python .github/scripts/upload_to_b2.py "$(ls dl/* | head -n 1)" "iSharpe Software/iSharpe SystemCare.msi" "$TAG"
