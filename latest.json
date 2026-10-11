@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.68",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.68/SystemCare-1.7.68-x64.msi",
-    "sha256":  "27F9D50F4D9A0E554DE87F2757EAE159E8D08D377CC3C5D10FC050B696000B63",
+    "version":  "1.7.69",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.69/SystemCare-1.7.69-x64.msi",
+    "sha256":  "A28C36DC9B42E3A7B722E1797803DE41C2AC97891DDECA9485D758FC9025FDFF",
     "sizeBytes":  63361024,
-    "releasedUtc":  "2026-10-11T14:27:56Z",
-    "notes":  "New option on the Browsers page to stop extensions syncing from the Google or Microsoft account, so an extension removed by a reset is not brought back by it."
+    "releasedUtc":  "2026-10-11T15:17:05Z",
+    "notes":  "The Browsers page now lets you tick what to look for (cache, cookies, history, saved tabs) before scanning, and only the ticked kinds are listed and cleared."
 }
