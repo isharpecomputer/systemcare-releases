@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.80",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.80/SystemCare-1.7.80-x64.msi",
-    "sha256":  "FF8D36A3B45BC78669C7B20B9140B6809C869679DE6D10535FDA62A79F309D6D",
-    "sizeBytes":  63557632,
-    "releasedUtc":  "2026-10-12T19:05:18Z",
-    "notes":  "You can now edit a backup, record the Services list so only newer services show as new, and the dashboard speed test works in the simple view. SystemCare also notices again when your default browser is changed in newer Windows 11."
+    "version":  "1.7.81",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.81/SystemCare-1.7.81-x64.msi",
+    "sha256":  "5A9340FD8A67D1CBD9087CDBDCA029830ADA3931B631E7BC72B56288302415A4",
+    "sizeBytes":  63561728,
+    "releasedUtc":  "2026-10-12T20:20:20Z",
+    "notes":  "Fixed the \u0027your default browser was changed\u0027 window: it now opens Windows straight to your browser\u0027s own page, with a clear Set default button, instead of a long list of apps."
 }
