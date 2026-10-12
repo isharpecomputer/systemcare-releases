@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.79",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.79/SystemCare-1.7.79-x64.msi",
-    "sha256":  "1DF2A779F27B81738DC74F7D94BF965FA46294312B4E62DB5F542789F35B54D8",
-    "sizeBytes":  63549440,
-    "releasedUtc":  "2026-10-12T13:39:03Z",
-    "notes":  "Push-a-file-and-run-it now runs it on your own screen instead of invisibly in the background, so an installer\u0027s wizard actually appears and can be clicked through."
+    "version":  "1.7.80",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.80/SystemCare-1.7.80-x64.msi",
+    "sha256":  "FF8D36A3B45BC78669C7B20B9140B6809C869679DE6D10535FDA62A79F309D6D",
+    "sizeBytes":  63557632,
+    "releasedUtc":  "2026-10-12T19:05:18Z",
+    "notes":  "You can now edit a backup, record the Services list so only newer services show as new, and the dashboard speed test works in the simple view. SystemCare also notices again when your default browser is changed in newer Windows 11."
 }
