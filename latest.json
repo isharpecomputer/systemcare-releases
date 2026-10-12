@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.75",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.75/SystemCare-1.7.75-x64.msi",
-    "sha256":  "2006758E483C4C4EE3A0531E81E0A71F6A966992B6ABA716B53F1DF418B75EB9",
-    "sizeBytes":  63533056,
-    "releasedUtc":  "2026-10-11T17:37:52Z",
-    "notes":  "Settings: optional full name and phone number, shown to your support company on their dashboard."
+    "version":  "1.7.76",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.76/SystemCare-1.7.76-x64.msi",
+    "sha256":  "291FC59514872301FCDE021E7C6FA408B90B6C669431021C5E4896689944A3C7",
+    "sizeBytes":  63553536,
+    "releasedUtc":  "2026-10-12T12:09:55Z",
+    "notes":  "Technicians can now send a tool to your computer to run, always signed and checked before it runs, and convert a loaner computer over to your account."
 }
