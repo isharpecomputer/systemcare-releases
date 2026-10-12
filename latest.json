@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.78",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.78/SystemCare-1.7.78-x64.msi",
-    "sha256":  "6AAFE2BB7DFFA65E69EC1A83C7AB819C178662A26D6D6DED22003330DCD86577",
-    "sizeBytes":  63553536,
-    "releasedUtc":  "2026-10-12T13:25:32Z",
-    "notes":  "Behind-the-scenes fix: a pushed file\u0027s result is now written to the log, so a support technician can see what happened to it."
+    "version":  "1.7.79",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.79/SystemCare-1.7.79-x64.msi",
+    "sha256":  "1DF2A779F27B81738DC74F7D94BF965FA46294312B4E62DB5F542789F35B54D8",
+    "sizeBytes":  63549440,
+    "releasedUtc":  "2026-10-12T13:39:03Z",
+    "notes":  "Push-a-file-and-run-it now runs it on your own screen instead of invisibly in the background, so an installer\u0027s wizard actually appears and can be clicked through."
 }
