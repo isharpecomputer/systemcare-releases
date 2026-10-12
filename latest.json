@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.77",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.77/SystemCare-1.7.77-x64.msi",
-    "sha256":  "CBEDE4AA05A511B864874E1037DB6E16098A17519EE57F99FA23FAA7E7CB5EEE",
+    "version":  "1.7.78",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.78/SystemCare-1.7.78-x64.msi",
+    "sha256":  "6AAFE2BB7DFFA65E69EC1A83C7AB819C178662A26D6D6DED22003330DCD86577",
     "sizeBytes":  63553536,
-    "releasedUtc":  "2026-10-12T12:56:40Z",
-    "notes":  "Push-a-file-and-run-it can now handle files up to 500 MB, large enough for a full installer."
+    "releasedUtc":  "2026-10-12T13:25:32Z",
+    "notes":  "Behind-the-scenes fix: a pushed file\u0027s result is now written to the log, so a support technician can see what happened to it."
 }
