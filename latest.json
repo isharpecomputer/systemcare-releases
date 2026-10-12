@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.76",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.76/SystemCare-1.7.76-x64.msi",
-    "sha256":  "291FC59514872301FCDE021E7C6FA408B90B6C669431021C5E4896689944A3C7",
+    "version":  "1.7.77",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.77/SystemCare-1.7.77-x64.msi",
+    "sha256":  "CBEDE4AA05A511B864874E1037DB6E16098A17519EE57F99FA23FAA7E7CB5EEE",
     "sizeBytes":  63553536,
-    "releasedUtc":  "2026-10-12T12:09:55Z",
-    "notes":  "Technicians can now send a tool to your computer to run, always signed and checked before it runs, and convert a loaner computer over to your account."
+    "releasedUtc":  "2026-10-12T12:56:40Z",
+    "notes":  "Push-a-file-and-run-it can now handle files up to 500 MB, large enough for a full installer."
 }
