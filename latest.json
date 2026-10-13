@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.82",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.82/SystemCare-1.7.82-x64.msi",
-    "sha256":  "AF3131B229BF0D41CF11939DF797E66BA5FC62FB5213211BF4C1D9578B8810FD",
-    "sizeBytes":  63606784,
-    "releasedUtc":  "2026-10-12T23:12:56Z",
-    "notes":  "New locks on the Browsers page: keep the search engine, home page and startup tabs, lock the proxy, keep Safe Browsing on, and block notifications and pop-ups. A new setting turns off all Windows notifications. The default-browser prompt now flashes a Click here marker on the button to press."
+    "version":  "1.7.83",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.83/SystemCare-1.7.83-x64.msi",
+    "sha256":  "08272E7C357F46C7771DB2680B04BB72C3651AD8B9A408533066064EE0EFE863",
+    "sizeBytes":  74944512,
+    "releasedUtc":  "2026-10-13T00:03:08Z",
+    "notes":  "The Windows notifications setting now really turns notifications off, and keeps them off. Every checkbox on the Settings page now saves the moment you tick it. Installing an update from the banner now always installs the newest version."
 }
