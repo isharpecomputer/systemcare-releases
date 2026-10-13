@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.86",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.86/SystemCare-1.7.86-x64.msi",
-    "sha256":  "056700C2A93DA0014E814D7B263E24956159D08B50A892D75BBC9A61EF706702",
-    "sizeBytes":  76206080,
-    "releasedUtc":  "2026-10-13T16:32:48Z",
-    "notes":  "A new look for SystemCare, keeping Windows System Protection on from a settings set, and a RAM test the support company can start from the dashboard."
+    "version":  "1.7.87",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.87/SystemCare-1.7.87-x64.msi",
+    "sha256":  "B3C75FAD0573485DC3D192B1368C597B288615078D006EEB0EA0424D01FEF44F",
+    "sizeBytes":  76288000,
+    "releasedUtc":  "2026-10-13T16:45:32Z",
+    "notes":  "A larger shield at the top of the SystemCare window."
 }
