@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.84",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.84/SystemCare-1.7.84-x64.msi",
-    "sha256":  "DC55F902AF9E11DF77A561DF8B4C7BADCC0A9FB47EA7276735F193437FDEAAEF",
-    "sizeBytes":  74977280,
-    "releasedUtc":  "2026-10-13T11:49:03Z",
-    "notes":  "Settings sets pushed from the dashboard, a first-run agreement that turns on the scan and screenshot choices in one step, and the server address pre-filled."
+    "version":  "1.7.85",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.85/SystemCare-1.7.85-x64.msi",
+    "sha256":  "AD4F9EE051AB7BDB374060ADF6B1323E21CECEC0B48865F926106F38863C9D61",
+    "sizeBytes":  74997760,
+    "releasedUtc":  "2026-10-13T14:53:55Z",
+    "notes":  "A computer running SystemCare and PC Armor now shows as one on the dashboard, a RAM check from the Windows logs, and the dashboard can tell whether a computer still matches its settings set."
 }
