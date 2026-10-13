@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.85",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.85/SystemCare-1.7.85-x64.msi",
-    "sha256":  "AD4F9EE051AB7BDB374060ADF6B1323E21CECEC0B48865F926106F38863C9D61",
-    "sizeBytes":  74997760,
-    "releasedUtc":  "2026-10-13T14:53:55Z",
-    "notes":  "A computer running SystemCare and PC Armor now shows as one on the dashboard, a RAM check from the Windows logs, and the dashboard can tell whether a computer still matches its settings set."
+    "version":  "1.7.86",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.86/SystemCare-1.7.86-x64.msi",
+    "sha256":  "056700C2A93DA0014E814D7B263E24956159D08B50A892D75BBC9A61EF706702",
+    "sizeBytes":  76206080,
+    "releasedUtc":  "2026-10-13T16:32:48Z",
+    "notes":  "A new look for SystemCare, keeping Windows System Protection on from a settings set, and a RAM test the support company can start from the dashboard."
 }
