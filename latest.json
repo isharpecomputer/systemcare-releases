@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.83",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.83/SystemCare-1.7.83-x64.msi",
-    "sha256":  "08272E7C357F46C7771DB2680B04BB72C3651AD8B9A408533066064EE0EFE863",
-    "sizeBytes":  74944512,
-    "releasedUtc":  "2026-10-13T00:03:08Z",
-    "notes":  "The Windows notifications setting now really turns notifications off, and keeps them off. Every checkbox on the Settings page now saves the moment you tick it. Installing an update from the banner now always installs the newest version."
+    "version":  "1.7.84",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.84/SystemCare-1.7.84-x64.msi",
+    "sha256":  "DC55F902AF9E11DF77A561DF8B4C7BADCC0A9FB47EA7276735F193437FDEAAEF",
+    "sizeBytes":  74977280,
+    "releasedUtc":  "2026-10-13T11:49:03Z",
+    "notes":  "Settings sets pushed from the dashboard, a first-run agreement that turns on the scan and screenshot choices in one step, and the server address pre-filled."
 }
