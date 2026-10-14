@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.89",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.89/SystemCare-1.7.89-x64.msi",
-    "sha256":  "E2F23291910E48E904D1D218481F1E44EC13AD74BEA2E56EB72E8555AAA5B4F8",
+    "version":  "1.7.90",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.90/SystemCare-1.7.90-x64.msi",
+    "sha256":  "9FB4E3548B24A3EDA273F6E1BAB238999C5CEADDE540385096F378C851785E8A",
     "sizeBytes":  76312576,
-    "releasedUtc":  "2026-10-14T14:12:33Z",
-    "notes":  "Uninstalling SystemCare now removes its settings, so installing it again starts fresh. Backups of browser profiles and removed programs are kept."
+    "releasedUtc":  "2026-10-14T21:21:58Z",
+    "notes":  "Scheduled maintenance now closes open browsers so it can clean them and restore their settings, instead of skipping them."
 }
