@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.88",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.88/SystemCare-1.7.88-x64.msi",
-    "sha256":  "36C0CC0496D0C197C6161994169A0D6BED306CC1B4AC59E213B3DA5DF894FED5",
-    "sizeBytes":  76308480,
-    "releasedUtc":  "2026-10-14T13:52:29Z",
-    "notes":  "Setup can add a support account a technician can sign in with. Security update to a signature-checking component."
+    "version":  "1.7.89",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.89/SystemCare-1.7.89-x64.msi",
+    "sha256":  "E2F23291910E48E904D1D218481F1E44EC13AD74BEA2E56EB72E8555AAA5B4F8",
+    "sizeBytes":  76312576,
+    "releasedUtc":  "2026-10-14T14:12:33Z",
+    "notes":  "Uninstalling SystemCare now removes its settings, so installing it again starts fresh. Backups of browser profiles and removed programs are kept."
 }
