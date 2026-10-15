@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.96",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.96/SystemCare-1.7.96-x64.msi",
-    "sha256":  "0CA4B1AE2BA8FEDC2CDD419170080CC662EE643C27609CBB28FAE2836FA5D481",
-    "sizeBytes":  76709888,
-    "releasedUtc":  "2026-10-15T19:09:21Z",
-    "notes":  "Setup can give the computer a nickname for your support company\u0027s dashboard, and the network device list has a Clear button."
+    "version":  "1.7.97",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.97/SystemCare-1.7.97-x64.msi",
+    "sha256":  "DA68F7317C8C43CE64F4D3A75315CCD6BE3F1EEABF643BA7884460095042E986",
+    "sizeBytes":  76722176,
+    "releasedUtc":  "2026-10-15T20:17:13Z",
+    "notes":  "The Diagnostics page can test the computer\u0027s memory (RAM), and maintenance schedules can include a memory test."
 }
