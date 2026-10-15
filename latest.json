@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.92",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.92/SystemCare-1.7.92-x64.msi",
-    "sha256":  "2D7B8714F9803FA0A0DBCB036D65096CD4AC36CE828876270C03FE785549DB24",
+    "version":  "1.7.93",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.93/SystemCare-1.7.93-x64.msi",
+    "sha256":  "DD375ABCD4E90ED6A56147EA53304E5DE72CFAD0580C4DF07BA691292E37A3C0",
     "sizeBytes":  76316672,
-    "releasedUtc":  "2026-10-15T12:04:46Z",
-    "notes":  "The SystemCare window now shrinks to fit smaller and lower-resolution screens."
+    "releasedUtc":  "2026-10-15T12:16:30Z",
+    "notes":  "The whole dashboard now fits on smaller laptop screens, and the system details take up less room."
 }
