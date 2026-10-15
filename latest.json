@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.90",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.90/SystemCare-1.7.90-x64.msi",
-    "sha256":  "9FB4E3548B24A3EDA273F6E1BAB238999C5CEADDE540385096F378C851785E8A",
-    "sizeBytes":  76312576,
-    "releasedUtc":  "2026-10-14T21:21:58Z",
-    "notes":  "Scheduled maintenance now closes open browsers so it can clean them and restore their settings, instead of skipping them."
+    "version":  "1.7.91",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.91/SystemCare-1.7.91-x64.msi",
+    "sha256":  "6297A9A80B0BBAC7A741C3AED314FE99E7688E8A5C0A74DA8C8DE1721534F373",
+    "sizeBytes":  76316672,
+    "releasedUtc":  "2026-10-15T11:39:48Z",
+    "notes":  "Keep and Remove on the new-program pop-up now work for every program. Before, they failed for most programs installed by Windows Installer."
 }
