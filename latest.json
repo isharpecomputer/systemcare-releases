@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.91",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.91/SystemCare-1.7.91-x64.msi",
-    "sha256":  "6297A9A80B0BBAC7A741C3AED314FE99E7688E8A5C0A74DA8C8DE1721534F373",
+    "version":  "1.7.92",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.92/SystemCare-1.7.92-x64.msi",
+    "sha256":  "2D7B8714F9803FA0A0DBCB036D65096CD4AC36CE828876270C03FE785549DB24",
     "sizeBytes":  76316672,
-    "releasedUtc":  "2026-10-15T11:39:48Z",
-    "notes":  "Keep and Remove on the new-program pop-up now work for every program. Before, they failed for most programs installed by Windows Installer."
+    "releasedUtc":  "2026-10-15T12:04:46Z",
+    "notes":  "The SystemCare window now shrinks to fit smaller and lower-resolution screens."
 }
