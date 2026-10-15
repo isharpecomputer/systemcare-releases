@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.97",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.97/SystemCare-1.7.97-x64.msi",
-    "sha256":  "DA68F7317C8C43CE64F4D3A75315CCD6BE3F1EEABF643BA7884460095042E986",
-    "sizeBytes":  76722176,
-    "releasedUtc":  "2026-10-15T20:17:13Z",
-    "notes":  "The Diagnostics page can test the computer\u0027s memory (RAM), and maintenance schedules can include a memory test."
+    "version":  "1.7.98",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.98/SystemCare-1.7.98-x64.msi",
+    "sha256":  "0243FABDED887E7A4EFE8E7CDEAF53E20BF0F9E501546277EB7FC6F9BB3228FD",
+    "sizeBytes":  76738560,
+    "releasedUtc":  "2026-10-15T22:33:47Z",
+    "notes":  "Setup now records how the computer is set up (programs, startup items, services and browser settings), and can apply your support company\u0027s standard settings."
 }
