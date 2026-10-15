@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.93",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.93/SystemCare-1.7.93-x64.msi",
-    "sha256":  "DD375ABCD4E90ED6A56147EA53304E5DE72CFAD0580C4DF07BA691292E37A3C0",
-    "sizeBytes":  76316672,
-    "releasedUtc":  "2026-10-15T12:16:30Z",
-    "notes":  "The whole dashboard now fits on smaller laptop screens, and the system details take up less room."
+    "version":  "1.7.94",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.94/SystemCare-1.7.94-x64.msi",
+    "sha256":  "E4DAB6FC49AAAC431F31DBAEC7DD0B7114E025CD15ABB64BB2B8E375D7DF177F",
+    "sizeBytes":  76705792,
+    "releasedUtc":  "2026-10-15T18:18:49Z",
+    "notes":  "The Network page can now scan the network and list every device on it, with its address, name and maker."
 }
