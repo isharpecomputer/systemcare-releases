@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.94",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.94/SystemCare-1.7.94-x64.msi",
-    "sha256":  "E4DAB6FC49AAAC431F31DBAEC7DD0B7114E025CD15ABB64BB2B8E375D7DF177F",
-    "sizeBytes":  76705792,
-    "releasedUtc":  "2026-10-15T18:18:49Z",
-    "notes":  "The Network page can now scan the network and list every device on it, with its address, name and maker."
+    "version":  "1.7.95",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.95/SystemCare-1.7.95-x64.msi",
+    "sha256":  "DABB6B40BB92CD16EC9FAE453E6EB6C37654E77AF4EC62E9F15436DD8711B166",
+    "sizeBytes":  76709888,
+    "releasedUtc":  "2026-10-15T18:47:39Z",
+    "notes":  "After an update, the new-program pop-ups and browser and notification settings now keep working straight away, instead of waiting for the next sign-in."
 }
