@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.100",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.100/SystemCare-1.7.100-x64.msi",
-    "sha256":  "350855102B519F56D4011FD0C5BE057A07F0CFF36AA648CF291D0A35B5F173BC",
+    "version":  "1.7.101",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.101/SystemCare-1.7.101-x64.msi",
+    "sha256":  "5E7D66393482A4D31A31BE367F6BBF7052EE1AAD39DB09561864571F65A491E5",
     "sizeBytes":  76832768,
-    "releasedUtc":  "2026-10-16T14:28:33Z",
-    "notes":  "A Log page and a silent setting for questions, Microsoft programs ignored, remote-control programs stopped and removed (yours is trusted), and your remote support installed at setup."
+    "releasedUtc":  "2026-10-16T14:40:11Z",
+    "notes":  "Fixes SystemCare freezing when the Log page is opened."
 }
