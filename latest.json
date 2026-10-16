@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.103",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.103/SystemCare-1.7.103-x64.msi",
-    "sha256":  "BF1DDCEAB343E07CF23E1E34EDC67CA92A2AB239EB3A0672000A809D04C334A8",
-    "sizeBytes":  76857344,
-    "releasedUtc":  "2026-10-16T16:02:14Z",
-    "notes":  "Fixes the dashboard showing a threat PC Armor had removed as not removed. With PC Armor installed, the maintenance scan tasks are marked as PC Armor\u0027s, and SystemCare keeps PC Armor running."
+    "version":  "1.7.104",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.104/SystemCare-1.7.104-x64.msi",
+    "sha256":  "40F6BA8F65969634225C0B1266735F24CE672DF912FE6DBC83C35A74EB7E70CE",
+    "sizeBytes":  76873728,
+    "releasedUtc":  "2026-10-16T17:08:53Z",
+    "notes":  "Quick Assist is blocked unless opened from Get help, ScamShield closes it, and ScamShield comes back after updates. New installs start with a daily 2 AM maintenance schedule and safer default settings."
 }
