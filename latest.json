@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.99",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.99/SystemCare-1.7.99-x64.msi",
-    "sha256":  "0F0666939628F5589C7BFAD157956187F344F5F2281891E7C64DCA14B62656E2",
-    "sizeBytes":  76742656,
-    "releasedUtc":  "2026-10-15T23:34:36Z",
-    "notes":  "Settings from your support company can now include the update time, speed test and ScamShield choices, and whether a maintenance schedule runs as SYSTEM."
+    "version":  "1.7.100",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.100/SystemCare-1.7.100-x64.msi",
+    "sha256":  "350855102B519F56D4011FD0C5BE057A07F0CFF36AA648CF291D0A35B5F173BC",
+    "sizeBytes":  76832768,
+    "releasedUtc":  "2026-10-16T14:28:33Z",
+    "notes":  "A Log page and a silent setting for questions, Microsoft programs ignored, remote-control programs stopped and removed (yours is trusted), and your remote support installed at setup."
 }
