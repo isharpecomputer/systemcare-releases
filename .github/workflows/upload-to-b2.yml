@@ -30,5 +30,10 @@ jobs:
           [ -n "$TAG" ] || TAG=$(gh release view -R "$GITHUB_REPOSITORY" --json tagName --jq .tagName)
           echo "TAG=$TAG" >> "$GITHUB_ENV"
           gh release download "$TAG" -R "$GITHUB_REPOSITORY" --pattern "SystemCare-*-x64.msi" --dir dl
+          # The combined SystemCare + PC Armor installer, when one is attached to this release (built by tools/build-combined.ps1).
+          gh release download "$TAG" -R "$GITHUB_REPOSITORY" --pattern "iSharpe-SystemCare-PCArmor-Setup-*.exe" --dir combined || true
       - name: Upload to Backblaze
         run: python .github/scripts/upload_to_b2.py "$(ls dl/* | head -n 1)" "iSharpe Software/iSharpe SystemCare.msi" "$TAG"
+      - name: Upload the combined installer to Backblaze
+        if: hashFiles('combined/*.exe') != ''
+        run: python .github/scripts/upload_to_b2.py "$(ls combined/* | head -n 1)" "iSharpe Software/iSharpe SystemCare and PC Armor Setup.exe" "$TAG"
