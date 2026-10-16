@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.102",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.102/SystemCare-1.7.102-x64.msi",
-    "sha256":  "498DC06DE2A48E6135916C99A8B527AF685BBAA4EB27A8D0D13126B918A2CE40",
-    "sizeBytes":  76853248,
-    "releasedUtc":  "2026-10-16T15:16:18Z",
-    "notes":  "When PC Armor is installed, it now does the security scanning and SystemCare steps aside. The combined SystemCare and PC Armor installer fills in the customer\u0027s email."
+    "version":  "1.7.103",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.103/SystemCare-1.7.103-x64.msi",
+    "sha256":  "BF1DDCEAB343E07CF23E1E34EDC67CA92A2AB239EB3A0672000A809D04C334A8",
+    "sizeBytes":  76857344,
+    "releasedUtc":  "2026-10-16T16:02:14Z",
+    "notes":  "Fixes the dashboard showing a threat PC Armor had removed as not removed. With PC Armor installed, the maintenance scan tasks are marked as PC Armor\u0027s, and SystemCare keeps PC Armor running."
 }
