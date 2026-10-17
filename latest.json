@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.104",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.104/SystemCare-1.7.104-x64.msi",
-    "sha256":  "40F6BA8F65969634225C0B1266735F24CE672DF912FE6DBC83C35A74EB7E70CE",
-    "sizeBytes":  76873728,
-    "releasedUtc":  "2026-10-16T17:08:53Z",
-    "notes":  "Quick Assist is blocked unless opened from Get help, ScamShield closes it, and ScamShield comes back after updates. New installs start with a daily 2 AM maintenance schedule and safer default settings."
+    "version":  "1.7.105",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.105/SystemCare-1.7.105-x64.msi",
+    "sha256":  "634B5545CF7665DD081A73FF42A8B2E5EF20D003294FA66FA006D1AB55DD7D82",
+    "sizeBytes":  76898304,
+    "releasedUtc":  "2026-10-17T23:27:29Z",
+    "notes":  "Remote-control programs are always caught, even with other options off, including ones run straight from a download without installing."
 }
