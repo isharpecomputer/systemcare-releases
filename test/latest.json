@@ -1,0 +1,8 @@
+{
+    "version":  "1.7.109",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.109/SystemCare-1.7.109-x64.msi",
+    "sha256":  "8757754758A2C2944B4D132FB396AABF5AA58C36B549EE5E1F7E9FB230008B29",
+    "sizeBytes":  76910592,
+    "releasedUtc":  "2026-10-19T18:19:14Z",
+    "notes":  "SystemCare no longer asks about iSharpe\u0027s own apps when they are installed. Adds the test channel, so new versions reach the support company\u0027s test PC a day before customers."
+}
