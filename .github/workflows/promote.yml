@@ -1,0 +1,66 @@
+name: Promote the tested release to customers
+
+# New SystemCare versions are published to test/latest.json first, which only the support company's test PC reads. This job copies
+# them to latest.json, which every customer computer reads, once they have been out for 24 hours - unless a file called HOLD is in
+# this repository (delete it to let the release go). "Release now" (force) skips the wait and the hold: the dashboard's
+# "Release to customers now" button runs it that way for an emergency fix.
+#
+# The signed files are copied byte for byte, so the signature stays valid; nothing here can change what computers install.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Release to customers now, without waiting the 24 hours and even if held"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: promote
+  cancel-in-progress: false
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 100
+
+      - name: Promote if it is time
+        env:
+          FORCE: ${{ inputs.force }}
+        run: |
+          set -e
+          if [ ! -f test/latest.json ] || [ ! -f test/latest.json.sig ]; then
+            echo "Nothing in the test channel."
+            exit 0
+          fi
+          if cmp -s test/latest.json latest.json && cmp -s test/latest.json.sig latest.json.sig; then
+            echo "Customers already have the tested version."
+            exit 0
+          fi
+          version=$(python3 -c "import json; print(json.load(open('test/latest.json'))['version'])")
+          if [ -f HOLD ] && [ "$FORCE" != "true" ]; then
+            echo "SystemCare $version is on hold: $(head -c 300 HOLD)"
+            exit 0
+          fi
+          published=$(git log -1 --format=%ct -- test/latest.json)
+          age=$(( $(date +%s) - published ))
+          if [ "$age" -lt 86400 ] && [ "$FORCE" != "true" ]; then
+            echo "SystemCare $version has been in testing for $(( age / 3600 )) hour(s); it goes to customers at 24."
+            exit 0
+          fi
+          cp test/latest.json latest.json
+          cp test/latest.json.sig latest.json.sig
+          git config user.name "iSharpe release ring"
+          git config user.email "alandwight81@gmail.com"
+          git add latest.json latest.json.sig
+          git commit -m "Promote SystemCare $version to customers$( [ "$FORCE" = "true" ] && echo ' (released early)' )"
+          git push
+          echo "SystemCare $version is now available to customers."
