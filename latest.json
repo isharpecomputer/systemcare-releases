@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.106",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.106/SystemCare-1.7.106-x64.msi",
-    "sha256":  "841D35C9B85E2ABEAC7B118EF25CCCA1B27A8BE958DF54C73DE68E4D5F233B85",
-    "sizeBytes":  76898304,
-    "releasedUtc":  "2026-10-17T23:41:25Z",
-    "notes":  "Updates now restart SystemCare\u0027s watcher and ScamShield straight away, so new protections work without signing out."
+    "version":  "1.7.107",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.107/SystemCare-1.7.107-x64.msi",
+    "sha256":  "723BD8F3DE390B21C3C89CF01E04F119F5AD122488763712353B721B6B227D5D",
+    "sizeBytes":  76902400,
+    "releasedUtc":  "2026-10-19T10:49:20Z",
+    "notes":  "Backups to a NAS or shared folder can now have their own network login, so scheduled backups can reach it."
 }
