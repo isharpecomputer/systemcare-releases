@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.107",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.107/SystemCare-1.7.107-x64.msi",
-    "sha256":  "723BD8F3DE390B21C3C89CF01E04F119F5AD122488763712353B721B6B227D5D",
-    "sizeBytes":  76902400,
-    "releasedUtc":  "2026-10-19T10:49:20Z",
-    "notes":  "Backups to a NAS or shared folder can now have their own network login, so scheduled backups can reach it."
+    "version":  "1.7.108",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.108/SystemCare-1.7.108-x64.msi",
+    "sha256":  "EC3EFB9B20D22BFBE0EC25717A95620EEBA071EB98BFDBCB0C22ED2610F04C9E",
+    "sizeBytes":  76910592,
+    "releasedUtc":  "2026-10-19T16:07:32Z",
+    "notes":  "Backups skip Dropbox\u0027s and Google Drive\u0027s own cache folders, so backups of synced folders finish cleanly."
 }
