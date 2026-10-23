@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.109",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.109/SystemCare-1.7.109-x64.msi",
-    "sha256":  "8757754758A2C2944B4D132FB396AABF5AA58C36B549EE5E1F7E9FB230008B29",
-    "sizeBytes":  76910592,
-    "releasedUtc":  "2026-10-19T18:19:14Z",
-    "notes":  "SystemCare no longer asks about iSharpe\u0027s own apps when they are installed. Adds the test channel, so new versions reach the support company\u0027s test PC a day before customers."
+    "version":  "1.7.110",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.110/SystemCare-1.7.110-x64.msi",
+    "sha256":  "B8A7BF0EDEE061EF231226DEA44CD92FDD31DC14F44B04A620254858DDFE5BF3",
+    "sizeBytes":  76926976,
+    "releasedUtc":  "2026-10-22T16:35:10Z",
+    "notes":  "Scheduled maintenance now closes browsers politely so nobody is signed out of their websites, can restart or shut the computer down afterwards, and blocks more remote-control tools, including Windows\u0027 own Remote Desktop and Remote Assistance."
 }
