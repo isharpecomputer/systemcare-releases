@@ -1,0 +1,101 @@
+name: Build the combined SystemCare + PC Armor installer
+
+# Keeps "iSharpe Software/iSharpe SystemCare and PC Armor Setup.exe" in the tech toolbox current with the newest release of BOTH
+# products. It used to be built by hand (tools\build-combined.ps1 in the source repository) after each release, and SystemCare 1.7.110
+# went out without one. Now:
+#   - a SystemCare release starts it straight away;
+#   - every hour it looks again, which is what catches a PC Armor release (that happens in pcarmor-releases, which cannot start a
+#     workflow here without a token of its own).
+# Each run builds only when the newest SystemCare release has no combined installer for the newest PC Armor yet, so the hourly look
+# costs a few seconds. "Build it again anyway" rebuilds regardless.
+#
+# The installer script is a copy of installer-combined\SystemCareAndPcArmor.iss from the source repository, in combined\installer,
+# with the icon it uses in combined\assets. Change it there and copy it here.
+
+on:
+  release:
+    types: [published]
+  schedule:
+    - cron: "41 * * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Build it again anyway, even if the newest versions already have one"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: combined
+  cancel-in-progress: false
+
+jobs:
+  combined:
+    runs-on: windows-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      B2_KEY_ID: ${{ secrets.B2_KEY_ID }}
+      B2_APP_KEY: ${{ secrets.B2_APP_KEY }}
+      B2_BUCKET: techtoolbox
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Is there anything new?
+        id: check
+        env:
+          FORCE: ${{ github.event.inputs.force }}
+        run: |
+          $sc = (gh release view -R isharpecomputer/systemcare-releases --json tagName --jq .tagName).TrimStart('v')
+          $pca = (gh release view -R isharpecomputer/pcarmor-releases --json tagName --jq .tagName).TrimStart('v')
+          if (-not $sc -or -not $pca) { throw "Could not read the newest releases (SystemCare '$sc', PC Armor '$pca')." }
+          $name = "iSharpe-SystemCare-PCArmor-Setup-$sc-$pca.exe"
+          $have = gh release view "v$sc" -R isharpecomputer/systemcare-releases --json assets --jq '.assets[].name'
+          $build = ($env:FORCE -eq 'true') -or -not ($have -contains $name)
+          Write-Host "Newest: SystemCare $sc, PC Armor $pca. $name $(if ($have -contains $name) { 'is already attached' } else { 'is missing' })."
+          "sc=$sc" >> $env:GITHUB_OUTPUT
+          "pca=$pca" >> $env:GITHUB_OUTPUT
+          "name=$name" >> $env:GITHUB_OUTPUT
+          "build=$($build.ToString().ToLowerInvariant())" >> $env:GITHUB_OUTPUT
+
+      - name: Download both installers
+        if: steps.check.outputs.build == 'true'
+        run: |
+          gh release download "v${{ steps.check.outputs.sc }}" -R isharpecomputer/systemcare-releases --pattern "SystemCare-${{ steps.check.outputs.sc }}-x64.msi" --dir dl
+          gh release download "v${{ steps.check.outputs.pca }}" -R isharpecomputer/pcarmor-releases --pattern "PCArmor-Setup-${{ steps.check.outputs.pca }}.exe" --dir dl
+          Get-ChildItem dl | Format-Table Name, Length
+
+      - name: Build
+        if: steps.check.outputs.build == 'true'
+        run: |
+          $iscc = @("${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe", "$env:ProgramFiles\Inno Setup 6\ISCC.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $iscc) {
+            choco install innosetup -y --no-progress | Out-Null
+            $iscc = @("${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe", "$env:ProgramFiles\Inno Setup 6\ISCC.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
+          }
+          if (-not $iscc) { throw 'Inno Setup could not be installed.' }
+          $sc = '${{ steps.check.outputs.sc }}'; $pca = '${{ steps.check.outputs.pca }}'
+          & $iscc /Q "/DSystemCareVersion=$sc" "/DPcArmorVersion=$pca" "/DSystemCareMsi=$PWD\dl\SystemCare-$sc-x64.msi" "/DPcArmorSetup=$PWD\dl\PCArmor-Setup-$pca.exe" combined\installer\SystemCareAndPcArmor.iss
+          if ($LASTEXITCODE -ne 0) { throw 'ISCC failed.' }
+          $out = "combined\artifacts\combined\${{ steps.check.outputs.name }}"
+          if (-not (Test-Path $out)) { throw "ISCC did not write $out." }
+          Write-Host "Built $out ($([math]::Round((Get-Item $out).Length / 1MB, 1)) MB), SHA256 $((Get-FileHash $out).Hash)"
+
+      - name: Attach it to the SystemCare release
+        if: steps.check.outputs.build == 'true'
+        run: gh release upload "v${{ steps.check.outputs.sc }}" "combined\artifacts\combined\${{ steps.check.outputs.name }}" -R isharpecomputer/systemcare-releases --clobber
+
+      - uses: actions/setup-python@v5
+        if: steps.check.outputs.build == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Put it in the tech toolbox
+        if: steps.check.outputs.build == 'true'
+        run: |
+          pip install b2sdk
+          python .github/scripts/upload_to_b2.py "combined\artifacts\combined\${{ steps.check.outputs.name }}" "iSharpe Software/iSharpe SystemCare and PC Armor Setup.exe" "v${{ steps.check.outputs.sc }}+${{ steps.check.outputs.pca }}"
