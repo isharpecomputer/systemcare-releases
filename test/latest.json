@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.111",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.111/SystemCare-1.7.111-x64.msi",
-    "sha256":  "6953EC0DF46263B709F01ED6148A96369ED484ACF3668E19F3690C5603AEDF32",
-    "sizeBytes":  76926976,
-    "releasedUtc":  "2026-10-25T17:25:18Z",
-    "notes":  "The dashboard no longer shows a next maintenance run on computers with no schedule, and a Settings label now fits on the page."
+    "version":  "1.7.112",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.112/SystemCare-1.7.112-x64.msi",
+    "sha256":  "B1797A20760531055B1E7CF9463CE459F983DF85B0D26464A9A8BF6EB6A04C93",
+    "sizeBytes":  76931072,
+    "releasedUtc":  "2026-10-25T18:27:35Z",
+    "notes":  "The email typed into the combined SystemCare and PC Armor installer now carries through to SystemCare\u0027s setup page."
 }
