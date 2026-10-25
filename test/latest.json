@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.112",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.112/SystemCare-1.7.112-x64.msi",
-    "sha256":  "B1797A20760531055B1E7CF9463CE459F983DF85B0D26464A9A8BF6EB6A04C93",
-    "sizeBytes":  76931072,
-    "releasedUtc":  "2026-10-25T18:27:35Z",
-    "notes":  "The email typed into the combined SystemCare and PC Armor installer now carries through to SystemCare\u0027s setup page."
+    "version":  "1.7.113",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.113/SystemCare-1.7.113-x64.msi",
+    "sha256":  "39516F688532A3D5110489F0B795E25C921FED49C98AA5D8F73F2827335D70F3",
+    "sizeBytes":  76926976,
+    "releasedUtc":  "2026-10-25T18:56:34Z",
+    "notes":  "The connection to the support company\u0027s dashboard keeps running after a problem, and starts itself again within ten minutes if it ever stops."
 }
