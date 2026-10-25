@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.110",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.110/SystemCare-1.7.110-x64.msi",
-    "sha256":  "B8A7BF0EDEE061EF231226DEA44CD92FDD31DC14F44B04A620254858DDFE5BF3",
+    "version":  "1.7.111",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.111/SystemCare-1.7.111-x64.msi",
+    "sha256":  "6953EC0DF46263B709F01ED6148A96369ED484ACF3668E19F3690C5603AEDF32",
     "sizeBytes":  76926976,
-    "releasedUtc":  "2026-10-22T16:35:10Z",
-    "notes":  "Scheduled maintenance now closes browsers politely so nobody is signed out of their websites, can restart or shut the computer down afterwards, and blocks more remote-control tools, including Windows\u0027 own Remote Desktop and Remote Assistance."
+    "releasedUtc":  "2026-10-25T17:25:18Z",
+    "notes":  "The dashboard no longer shows a next maintenance run on computers with no schedule, and a Settings label now fits on the page."
 }
