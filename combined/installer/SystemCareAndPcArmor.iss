@@ -94,7 +94,9 @@ end;
 function NextButtonClick(CurPageID: Integer): Boolean;
 begin
   Result := True;
-  if (EmailPage <> nil) and (CurPageID = EmailPage.ID) and not LooksLikeEmail(Trim(EmailPage.Values[0])) then
+  { Email, not the page: a silent install gives it as /EMAIL= and leaves the page empty, and checking the page alone stopped
+    every silent install with an email on a message box nobody could answer. }
+  if (EmailPage <> nil) and (CurPageID = EmailPage.ID) and (Email = '') then
   begin
     MsgBox('Enter the customer''s email address. Both products are licensed to it.', mbError, MB_OK);
     Result := False;
