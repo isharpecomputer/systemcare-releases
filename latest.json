@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.114",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.114/SystemCare-1.7.114-x64.msi",
-    "sha256":  "378C5813A76313ECFC3726177480D8AC672FD7189B079753EFC6DE935330003C",
-    "sizeBytes":  76939264,
-    "releasedUtc":  "2026-10-25T19:56:06Z",
-    "notes":  "Your support company can now add PC Armor to this computer from its dashboard, downloaded from PC Armor\u0027s own signed releases."
+    "version":  "1.7.115",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.115/SystemCare-1.7.115-x64.msi",
+    "sha256":  "2FFE5F2723AEEEA20C1983378D45F057010F3792446CC0E12BB843A4EE10780B",
+    "sizeBytes":  76943360,
+    "releasedUtc":  "2026-10-26T00:07:19Z",
+    "notes":  "Adding PC Armor from the support company\u0027s dashboard now also works on a computer where PC Armor is already running."
 }
