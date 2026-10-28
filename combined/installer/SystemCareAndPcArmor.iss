@@ -51,16 +51,16 @@ Source: "{#SystemCareMsi}"; DestDir: "{tmp}"; DestName: "SystemCare.msi"; Flags:
 Source: "{#PcArmorSetup}"; DestDir: "{tmp}"; DestName: "PCArmor-Setup.exe"; Flags: deleteafterinstall
 
 [Run]
-; Only when SystemCare could not be registered here: opens its setup page with the customer's email filled in. SystemCare asks Windows
-; for its own rights.
-Filename: "{commonpf64}\iSharpe SystemCare\iSharpe.SystemCare.exe"; Parameters: "{code:SystemCareArgs}"; Description: "Open SystemCare to finish setting up (recommended)"; Flags: nowait postinstall skipifsilent; Check: NotRegistered
+; Opens SystemCare's setup page with the customer's email filled in. The customer connects it there, after reading and agreeing to what
+; SystemCare does and choosing remote support and a support account; the installer never connects it for them. SystemCare asks
+; Windows for its own rights.
+Filename: "{commonpf64}\iSharpe SystemCare\iSharpe.SystemCare.exe"; Parameters: "{code:SystemCareArgs}"; Description: "Open SystemCare to finish setting up (recommended)"; Flags: nowait postinstall skipifsilent
 
 [Code]
 var
   ProtectPage: TInputOptionWizardPage;
   EmailPage: TInputQueryWizardPage;
   Failure: String;
-  Registered: Boolean;
 
 const
   DashboardUrl = 'https://fastpc123.com';
@@ -135,25 +135,11 @@ begin
     Result := Result + ' /EMAIL=' + Email;
 end;
 
-function FileContentsOrEmpty(Path: String): String;
-var
-  S: AnsiString;
-begin
-  Result := '';
-  if LoadStringFromFile(Path, S) then
-    Result := String(S);
-end;
-
 function SystemCareArgs(Param: String): String;
 begin
   Result := '';
   if Email <> '' then
     Result := '--customer-email=' + Email;
-end;
-
-function NotRegistered: Boolean;
-begin
-  Result := not Registered;
 end;
 
 function SystemCareSettings: String;
@@ -172,43 +158,8 @@ begin
     Log('Could not write ' + SystemCareSettings);
 end;
 
-{ SystemCare's own registration, as its setup page's Connect button does: the dashboard checks the email is licensed for SystemCare.
-  Tried a few times, since a computer that has just installed something can take a moment to reach the internet. }
-procedure RegisterSystemCare;
-var
-  Agent, Output, Said: String;
-  RC, Attempt: Integer;
-begin
-  Agent := ExpandConstant('{commonpf64}\iSharpe SystemCare\iSharpe.SystemCare.Agent.exe');
-  if (Email = '') or not FileExists(Agent) then
-    Exit;
-  WizardForm.StatusLabel.Caption := 'Connecting SystemCare to the iSharpe dashboard...';
-  Output := ExpandConstant('{tmp}\systemcare-setup.txt');
-  for Attempt := 1 to 3 do
-  begin
-    if Attempt > 1 then
-      Sleep(10000);
-    RC := -1;
-    if Exec(ExpandConstant('{cmd}'), '/C ""' + Agent + '" server-setup ' + Email + ' > "' + Output + '" 2>&1"', '', SW_HIDE, ewWaitUntilTerminated, RC) and (RC = 0) then
-    begin
-      Registered := True;
-      Log('SystemCare registered under ' + Email);
-      Exit;
-    end;
-    Said := Trim(FileContentsOrEmpty(Output));
-    Log('SystemCare server-setup try ' + IntToStr(Attempt) + ' ended with ' + IntToStr(RC) + ':' + #13#10 + Said);
-    { 1 = reached or not reached; other codes (no address, no email) will not change by trying again. }
-    if RC <> 1 then
-      Break;
-  end;
-  if Length(Said) > 400 then
-    Said := Copy(Said, 1, 400) + '...';
-  Failure := Failure + #13#10 + 'SystemCare installed but did not connect to the dashboard: ' + Said + #13#10 +
-             'Open SystemCare from the next page to connect it.';
-end;
-
 { Windows Installer fails (1603) when the same SystemCare is installed over itself, so a computer that already has this version or a
-  newer one keeps it. It still gets connected, which is usually why the installer is run again. }
+  newer one keeps it. }
 function SystemCareAlreadyHere: Boolean;
 var
   Installed: String;
@@ -245,18 +196,13 @@ begin
 
   // SystemCare first, then PC Armor: when PC Armor is there and licensed, SystemCare hands it the scanning by itself.
   if SystemCareAlreadyHere then
-  begin
-    Log('SystemCare ' + '{#SystemCareVersion}' + ' or newer is already installed; only connecting it.');
-    RegisterSystemCare;
-  end
+    Log('SystemCare ' + '{#SystemCareVersion}' + ' or newer is already installed; keeping it.')
   else
   begin
     WizardForm.StatusLabel.Caption := 'Installing iSharpe SystemCare...';
     if not Exec(ExpandConstant('{sys}\msiexec.exe'), '/i "' + ExpandConstant('{tmp}\SystemCare.msi') + '" /qn /norestart',
                 '', SW_HIDE, ewWaitUntilTerminated, RC) or ((RC <> 0) and (RC <> 3010)) then
-      Failure := Failure + #13#10 + 'SystemCare did not install (Windows Installer code ' + IntToStr(RC) + ').'
-    else
-      RegisterSystemCare;
+      Failure := Failure + #13#10 + 'SystemCare did not install (Windows Installer code ' + IntToStr(RC) + ').';
   end;
 
   WizardForm.StatusLabel.Caption := 'Installing PC Armor (this can take a minute)...';
