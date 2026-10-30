@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.116",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.116/SystemCare-1.7.116-x64.msi",
-    "sha256":  "2E3C03BDD5957875ABF9AF012A1951D23CA37DE80885A639F610034B94C901C4",
-    "sizeBytes":  76939264,
-    "releasedUtc":  "2026-10-29T16:46:38Z",
-    "notes":  "Connecting SystemCare no longer fails when another program has its settings open for a moment, and its window opens straight away on slow, busy computers."
+    "version":  "1.7.117",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.117/SystemCare-1.7.117-x64.msi",
+    "sha256":  "D73533BAC62A5243EB6F503894A332D9CAB7396F409801479568115560267E49",
+    "sizeBytes":  76947456,
+    "releasedUtc":  "2026-10-30T18:44:00Z",
+    "notes":  "Your support company\u0027s own ScreenConnect support sessions are no longer stopped while they install."
 }
