@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.118",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.118/SystemCare-1.7.118-x64.msi",
-    "sha256":  "7CA9C62ABCB58C36E376F66B7C6B3B935EC867EF175CEACA4D982FF7D1F1ADD0",
-    "sizeBytes":  77000704,
-    "releasedUtc":  "2026-10-31T13:59:51Z",
+    "version":  "1.7.119",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.119/SystemCare-1.7.119-x64.msi",
+    "sha256":  "F1A0E82A5AA5652078AFF1405ACE33CA214A930E1BC018330F493BFCF27D0146",
+    "sizeBytes":  77004800,
+    "releasedUtc":  "2026-10-31T14:15:50Z",
     "notes":  "iSharpe FileSafe cloud storage: new customers can get it at setup, a FileSafe page shows how much is backed up, and Settings can turn FileSafe on or off."
 }
