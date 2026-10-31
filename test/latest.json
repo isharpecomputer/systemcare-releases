@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.119",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.119/SystemCare-1.7.119-x64.msi",
-    "sha256":  "F1A0E82A5AA5652078AFF1405ACE33CA214A930E1BC018330F493BFCF27D0146",
-    "sizeBytes":  77004800,
-    "releasedUtc":  "2026-10-31T14:15:50Z",
-    "notes":  "iSharpe FileSafe cloud storage: new customers can get it at setup, a FileSafe page shows how much is backed up, and Settings can turn FileSafe on or off."
+    "version":  "1.7.120",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.120/SystemCare-1.7.120-x64.msi",
+    "sha256":  "3FB299C4B70EF754FD2A52298B089D0BB1F23195C0BFED78C69786B1881C0B83",
+    "sizeBytes":  77008896,
+    "releasedUtc":  "2026-10-31T16:30:33Z",
+    "notes":  "Your support company can pause the blocking of other remote-control programs for half an hour from its dashboard, and install its own remote support."
 }
