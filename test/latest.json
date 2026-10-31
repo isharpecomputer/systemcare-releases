@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.120",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.120/SystemCare-1.7.120-x64.msi",
-    "sha256":  "3FB299C4B70EF754FD2A52298B089D0BB1F23195C0BFED78C69786B1881C0B83",
+    "version":  "1.7.121",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.121/SystemCare-1.7.121-x64.msi",
+    "sha256":  "591DB84C8E4C2ECDAFA49617227E27644366AD4F834097614AF5D36522A051B4",
     "sizeBytes":  77008896,
-    "releasedUtc":  "2026-10-31T16:30:33Z",
+    "releasedUtc":  "2026-10-31T16:51:13Z",
     "notes":  "Your support company can pause the blocking of other remote-control programs for half an hour from its dashboard, and install its own remote support."
 }
