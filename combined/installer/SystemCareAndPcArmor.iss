@@ -106,8 +106,9 @@ function NextButtonClick(CurPageID: Integer): Boolean;
 begin
   Result := True;
   { Email, not the page: a silent install gives it as /EMAIL= and leaves the page empty, and checking the page alone stopped
-    every silent install with an email on a message box nobody could answer. }
-  if (EmailPage <> nil) and (CurPageID = EmailPage.ID) and (Email = '') then
+    every silent install with an email on a message box nobody could answer. A silent install with no /EMAIL= isn't asked at all
+    (nobody could answer, and the wizard waited for ever): both products install unlicensed, to be licensed inside each one later. }
+  if (EmailPage <> nil) and (CurPageID = EmailPage.ID) and (Email = '') and not WizardSilent then
   begin
     MsgBox('Enter the customer''s email address. Both products are licensed to it.', mbError, MB_OK);
     Result := False;
