@@ -69,9 +69,25 @@ jobs:
           gh release download "v${{ steps.check.outputs.pca }}" -R isharpecomputer/pcarmor-releases --pattern "PCArmor-Setup-${{ steps.check.outputs.pca }}.exe" --dir dl
           Get-ChildItem dl | Format-Table Name, Length
 
+      - uses: actions/setup-dotnet@v4
+        if: steps.check.outputs.build == 'true'
+        with:
+          dotnet-version: "10.0.x"
+
+      # The combined setup is signed as iSharpe Computer Solutions (Smart App Control blocks unsigned setups) through Azure
+      # Artifact Signing, as the app registration "iSharpe code signing" (secrets AZURE_*; its secret expires 2028-11-05, see the
+      # registry's "Signing and updates"). Inno Setup calls the sign tool for the setup it writes.
       - name: Build
         if: steps.check.outputs.build == 'true'
+        env:
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
         run: |
+          dotnet tool install --global --prerelease sign
+          if ($LASTEXITCODE -ne 0) { throw 'The sign tool could not be installed.' }
+          $signExe = Join-Path $env:USERPROFILE '.dotnet\tools\sign.exe'
+          $sign = "$signExe code artifact-signing --artifact-signing-endpoint https://eus.codesigning.azure.net/ --artifact-signing-account isharpe-signing --artifact-signing-certificate-profile isharpe-public --description-url https://isharpe.com `$f"
           $iscc = @("${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe", "$env:ProgramFiles\Inno Setup 6\ISCC.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
           if (-not $iscc) {
             choco install innosetup -y --no-progress | Out-Null
@@ -79,10 +95,13 @@ jobs:
           }
           if (-not $iscc) { throw 'Inno Setup could not be installed.' }
           $sc = '${{ steps.check.outputs.sc }}'; $pca = '${{ steps.check.outputs.pca }}'
-          & $iscc /Q "/DSystemCareVersion=$sc" "/DPcArmorVersion=$pca" "/DSystemCareMsi=$PWD\dl\SystemCare-$sc-x64.msi" "/DPcArmorSetup=$PWD\dl\PCArmor-Setup-$pca.exe" combined\installer\SystemCareAndPcArmor.iss
-          if ($LASTEXITCODE -ne 0) { throw 'ISCC failed.' }
+          & $iscc /Q "/DSystemCareVersion=$sc" "/DPcArmorVersion=$pca" "/DSystemCareMsi=$PWD\dl\SystemCare-$sc-x64.msi" "/DPcArmorSetup=$PWD\dl\PCArmor-Setup-$pca.exe" "/Sisharpe=$sign" combined\installer\SystemCareAndPcArmor.iss
+          if ($LASTEXITCODE -ne 0) { throw 'ISCC failed (or signing failed).' }
           $out = "combined\artifacts\combined\${{ steps.check.outputs.name }}"
           if (-not (Test-Path $out)) { throw "ISCC did not write $out." }
+          $sig = Get-AuthenticodeSignature $out
+          if ($sig.Status -ne 'Valid' -or $sig.SignerCertificate.Subject -notmatch 'O=iSharpe Computer Solutions') { throw "The setup is not signed properly: $($sig.Status) $($sig.StatusMessage)" }
+          Write-Host "Signed by $($sig.SignerCertificate.Subject)"
           Write-Host "Built $out ($([math]::Round((Get-Item $out).Length / 1MB, 1)) MB), SHA256 $((Get-FileHash $out).Hash)"
 
       - name: Attach it to the SystemCare release

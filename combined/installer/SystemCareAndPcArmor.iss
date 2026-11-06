@@ -34,6 +34,9 @@ ArchitecturesInstallIn64BitMode=x64compatible
 PrivilegesRequired=admin
 WizardStyle=modern
 MinVersion=10.0.17763
+; Signed as iSharpe Computer Solutions (Smart App Control blocks unsigned setups). The builder passes the "isharpe" sign tool:
+; tools\build-combined.ps1 uses C:\Claudework\CodeSigning\sign-files.ps1, systemcare-releases combined.yml the sign tool directly.
+SignTool=isharpe
 ; Nothing of its own is installed, so there is nothing for it to uninstall: each product has its own entry in Installed apps.
 CreateAppDir=no
 Uninstallable=no
