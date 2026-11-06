@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.123",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.123/SystemCare-1.7.123-x64.msi",
-    "sha256":  "18B5DA979995868DC25B38A8876075B66A1BEBB2458B33BF31996EF196007025",
-    "sizeBytes":  77025280,
-    "releasedUtc":  "2026-11-05T13:33:40Z",
-    "notes":  "SystemCare no longer reopens PC Armor\u0027s icon while PC Armor is being installed, updated or removed."
+    "version":  "1.7.124",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.124/SystemCare-1.7.124-x64.msi",
+    "sha256":  "8617A64617131A65CEE2993D7540B967CD6FAD99DB778E094166D5E0D13C945E",
+    "sizeBytes":  77352960,
+    "releasedUtc":  "2026-11-06T12:33:38Z",
+    "notes":  "SystemCare is now signed as iSharpe Computer Solutions, so Windows Smart App Control trusts it."
 }
