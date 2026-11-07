@@ -1,8 +1,8 @@
 {
-    "version":  "1.7.122",
-    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.122/SystemCare-1.7.122-x64.msi",
-    "sha256":  "0FE9AE41BC6D5764190B3BE790865A2B22268E2770533696EF2D30B48F94EFB2",
-    "sizeBytes":  77025280,
-    "releasedUtc":  "2026-11-02T18:52:56Z",
-    "notes":  "The setup page starts the support account with the name and password your support company chose, and tells its dashboard which account was made."
+    "version":  "1.7.124",
+    "installerUrl":  "https://github.com/isharpecomputer/systemcare-releases/releases/download/v1.7.124/SystemCare-1.7.124-x64.msi",
+    "sha256":  "8617A64617131A65CEE2993D7540B967CD6FAD99DB778E094166D5E0D13C945E",
+    "sizeBytes":  77352960,
+    "releasedUtc":  "2026-11-06T12:33:38Z",
+    "notes":  "SystemCare is now signed as iSharpe Computer Solutions, so Windows Smart App Control trusts it."
 }
